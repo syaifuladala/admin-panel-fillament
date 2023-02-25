@@ -3,6 +3,7 @@ Developed using [**laravel**](https://laravel.com/) and [**fillament**](https://
 
 ## Feature :
 - Authentication Sign in and Sign up, Forgot Password by [breezy](https://filamentphp.com/plugins/breezy)
+- Role and Permission by [phpsa](https://filamentphp.com/plugins/user-role-resource-management)
 
 ## Installation
 - composer install
