@@ -16,4 +16,9 @@ class ManageCategories extends ManageRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    public function isTableSearchable(): bool
+    {
+        return true;
+    }
 }

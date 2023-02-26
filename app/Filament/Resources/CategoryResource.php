@@ -32,7 +32,7 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id'),
-                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('name')->sortable()->searchable(),
             ])
             ->filters([
                 Tables\Filters\TrashedFilter::make(),
@@ -47,7 +47,8 @@ class CategoryResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
                 Tables\Actions\ForceDeleteBulkAction::make(),
                 Tables\Actions\RestoreBulkAction::make(),
-            ]);
+            ])
+            ->defaultSort('name');
     }
     
     public static function getPages(): array
